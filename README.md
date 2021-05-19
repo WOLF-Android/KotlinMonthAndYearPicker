@@ -2,6 +2,9 @@
 
 Month and Year Picker allow user to pick only month and year or only month or only year as required. You will get notified for all action's such as on selection of date, on selection of month and on section of year.
 
+[![](https://jitpack.io/v/gaiththewolf/KotlinMonthAndYearPicker.svg)](https://jitpack.io/#gaiththewolf/KotlinMonthAndYearPicker)
+[![Build Status](https://travis-ci.com/gaiththewolf/KotlinMonthAndYearPicker.svg?branch=main)](https://travis-ci.com/gaiththewolf/KotlinMonthAndYearPicker)
+
 # Original repository
 
 https://github.com/premkumarroyal/MonthAndYearPicker
