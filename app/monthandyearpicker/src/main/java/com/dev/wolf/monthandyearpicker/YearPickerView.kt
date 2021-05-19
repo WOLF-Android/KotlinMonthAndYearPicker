@@ -126,9 +126,9 @@ internal class YearPickerView(context: Context, attrs: AttributeSet?, defStyleAt
             return true
         }
 
-        override fun getView(position: Int, convertView: View, parent: ViewGroup): View {
+        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
             val v: TextView
-            val hasNewView = false
+            val hasNewView = convertView == null
             v = if (hasNewView) {
                 val ITEM_LAYOUT = R.layout.year_label_text_view
                 __inflater.inflate(ITEM_LAYOUT, parent, false) as TextView

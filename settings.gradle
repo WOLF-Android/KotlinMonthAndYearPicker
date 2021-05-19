@@ -1,4 +1,3 @@
 rootProject.name = "KotlinMonthAndYearPicker"
-include ':app'
 include ':app:monthandyearpicker'
 include ':app:sample'

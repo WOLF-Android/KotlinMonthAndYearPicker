@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             MonthPickerDialog.Builder(this, object : MonthPickerDialog.OnDateSetListener{
                 override fun onDateSet(selectedMonth: Int, selectedYear: Int) {
                     Log.d("MainActivity", "selectedMonth : " + selectedMonth + " selectedYear : " + selectedYear);
-                    Toast.makeText(this@MainActivity, "Date set with month" + selectedMonth + " year " + selectedYear, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this@MainActivity, "Date set with month" + selectedMonth + " year " + selectedYear, Toast.LENGTH_SHORT).show()
                 }
             }, today.get(Calendar.YEAR), today.get(Calendar.MONTH))
                 .setMinYear(1990)
@@ -39,5 +39,18 @@ class MainActivity : AppCompatActivity() {
                 .build()
                 .show()
         }
+
+        findViewById<Button>(R.id.year_picker).setOnClickListener {
+            MonthPickerDialog.Builder(this, object : MonthPickerDialog.OnDateSetListener{
+                override fun onDateSet(selectedMonth: Int, selectedYear: Int) {
+                    Toast.makeText(this@MainActivity, "year : $selectedYear", Toast.LENGTH_SHORT).show()
+                }
+            }, today.get(Calendar.YEAR), 0)
+                .showYearOnly()
+                .setYearRange(today.get(Calendar.YEAR) - 5, today.get(Calendar.YEAR) + 5)
+                .build()
+                .show()
+        }
     }
+
 }
