@@ -9,6 +9,20 @@ Month and Year Picker allow user to pick only month and year or only month or on
 
 https://github.com/premkumarroyal/MonthAndYearPicker
 
+## Usage 
+
+Add Gradle Dependency in your build.gradle file
+
+    implementation 'com.github.gaiththewolf:KotlinMonthAndYearPicker:Tag'
+
+or Maven
+
+    <dependency>
+	    <groupId>com.github.gaiththewolf</groupId>
+	    <artifactId>KotlinMonthAndYearPicker</artifactId>
+	    <version>Tag</version>
+	</dependency>
+   
 
 # Code
 
@@ -78,23 +92,5 @@ Month and Year picker by default pick the color from theme if you declared color
 
         <item name="dialogActionButtonColor">@color/colorAccent</item>
     </style>
-
-
-## Usage 
-
-Add Gradle Dependency in your build.gradle file
-
-    implementation 'com.github.gaiththewolf:KotlinMonthAndYearPicker:Tag'
-
-or Maven
-
-    <dependency>
-	    <groupId>com.github.gaiththewolf</groupId>
-	    <artifactId>KotlinMonthAndYearPicker</artifactId>
-	    <version>Tag</version>
-	</dependency>
-   
-
-
 
 
